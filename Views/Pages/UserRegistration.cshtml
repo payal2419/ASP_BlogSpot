@@ -1,0 +1,162 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Extrnal CSS -->
+    <link rel="stylesheet" href="~/BlogSpot/css/UserRegistration/style.css">
+
+    <title>User Registration</title>
+    <link rel="icon" type="image/png" href="~/Images/logo1.png" />
+</head>
+<body>
+    <!-- LOADER HERE  -->
+    @*<div id="loading">
+        <img src="~/Images/calculating2.gif" alt="Calculating">
+    </div>*@
+
+    <button id="myBtn" title="Top">Top</button>
+    <div id="content-body">
+        <div class="page">
+            <div id="logo" class="mt-5 float-left">
+                <img src="~/BlogSpot/images/WhatsTrending/logo2.png" alt="ASP" id="logo1">
+                <p class="site-title mt-2 h3 font-weight-bold">
+                    <a href="../index.html" id="title-logo" target="_blank">ASP BlogCorner</a>
+                </p>
+                <p class="site-description font-weight-light h5 text-uppercase">Write Your Hear Out!!</p>
+            </div>
+            <div class="float-left mr-auto" id="listNav">
+                <ul class="list-inline">
+                    <li class="list-inline-item font-weight-bold h5"><a href="/HomePage/Index">Home</a></li>
+                    <li class="list-inline-item font-weight-bold h5"><a href="/Pages/Blog">Blog</a></li>
+                    <li class="list-inline-item font-weight-bold h5"><a href="/Pages/WhatsTrending">What's Trending !!</a></li>
+                    <li class="list-inline-item font-weight-bold h5"><a href="/Pages/Experiences">Experiences</a></li>
+                    <li class="list-inline-item font-weight-bold h5"><a href="/Pages/Contact">Contact</a></li>
+                    <li class="list-inline-item font-weight-bold h5" data-toggle="modal" data-target="#exampleModal" id="myLogin"><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <hr id="start">
+        <div class="blog-content">
+            <div class="blog-header">
+                <h2 class="text-center font-weight-bold">User Registration Form</h2>
+                <hr id="mid">
+            </div>
+            <div class="register-body">
+                <form>
+                    <div class="form-group">
+                        <div class="row">
+
+                            <!-- First Name -->
+                            <div class="col-md-4">
+                                <label for="txtFName" class="font-weight-bold">First Name</label>
+                                <input type="text" class="form-control" id="txtFName">
+                            </div>
+                            
+                            <!-- Middle Name -->
+                            <div class="col-md-4">
+                                <label for="txtMName" class="font-weight-bold">Middle Name</label>
+                                <input type="text" class="form-control" id="txtMName">
+                            </div>
+                            
+                            <!-- Last Name -->
+                            <div class="col-md-4">
+                                <label for="txtLName" class="font-weight-bold">Last Name</label>
+                                <input type="text" class="form-control" id="txtLName">
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <!-- Add Blogging Name -->
+                            <div class="col-md-3">
+                                <label for="txtLName" class="font-weight-bold">Enter Public Blogging Name</label>
+                                <input type="text" class="form-control" id="txtPBName">
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div class="col-md-3">
+                                <label for="txtTel" class="font-weight-bold">Enter Phone Number</label>
+                                <input type="tel" class="form-control" id="txtTel" />
+                            </div>
+
+                            <!-- Age -->
+                            <div class="col-md-3">
+                                <label for="txtAge" class="font-weight-bold">Enter Age</label>
+                                <input type="text" class="form-control" id="txtAge">
+                            </div>
+
+                            <!-- DoB -->
+                            <div class="col-md-3">
+                                <label for="lblDob" class="font-weight-bold">Enter Date Of Birth</label>
+                                <input class="form-control" type="date" id="txtDob">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+
+                            <!-- User Name -->
+                            <div class="col-md-4">
+                                <label for="txtUSRName" class="font-weight-bold">Enter Username</label>
+                                <input type="text" class="form-control" id="txtUSRName">
+                            </div>
+
+                            <!-- Password Name -->
+                            <div class="col-md-4">
+                                <label for="txtPwd" class="font-weight-bold">Enter Password</label>
+                                <input type="password" class="form-control" id="txtPwd">
+                            </div>
+
+                            <!-- Confirm Name -->
+                            <div class="col-md-4">
+                                <label for="txtCnfPwd" class="font-weight-bold">Confirm Password</label>
+                                <input type="password" class="form-control" id="txtCnfPwd">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col text-center">
+                                <button type="reset" class="btn btn-danger" id="myBtnReset">Reset</button>
+                                <button type="submit" class="btn btn-success ml-2" id="myBtnSubmit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- end -->
+            </div>
+        </div>
+        <br>
+        <!-- Footer -->
+        <footer>
+            <div class="page-name">
+                <p class="font-weight-light h4 ml-5 float-left">ASP BlogCorner</p>
+                <ul class="list-inline float-right ml-3">
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">Home</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">Blog</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">What's Trending !!</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">Experiences</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">About The BlogCorner</a></li>
+                    <li class="list-inline-item h5 font-weight-light"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- External JS -->
+    <script src="~/BlogSpot/js/UserRegistration/app.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>

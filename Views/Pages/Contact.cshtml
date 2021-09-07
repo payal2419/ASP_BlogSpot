@@ -1,0 +1,143 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Extrnal CSS -->
+    <link rel="stylesheet" href="~/BlogSpot/css/Contact/style.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <title>ASP BlogCorner</title>
+    <link rel="icon" type="image/png" href="~/Images/logo1.png" />
+</head>
+<body>
+
+    <!-- <button id="myBtn" title="Top">Top</button> -->
+
+    <div class="page">
+        <div id="logo" class="mt-5 float-left">
+            <img src="~/BlogSpot/images/Contact/logo2.png" alt="ASP" id="logo1">
+            <p class="site-title mt-2 h3 font-weight-bold">
+                <a href="../index.html" id="title-logo" target="_blank">ASP BlogCorner</a>
+            </p>
+            <p class="site-description font-weight-light h5 text-uppercase">Write Your Hear Out!!</p>
+        </div>
+        <div class="float-left mr-auto" id="listNav">
+            <ul class="list-inline">
+                <li class="list-inline-item font-weight-bold h5"><a href="/HomePage/Index">Home</a></li>
+                <li class="list-inline-item font-weight-bold h5"><a href="/Pages/Blog">Blog</a></li>
+                <li class="list-inline-item font-weight-bold h5"><a href="/Pages/WhatsTrending">What's Trending !!</a></li>
+                <li class="list-inline-item font-weight-bold h5"><a href="/Pages/Experiences">Experiences</a></li>
+                <li class="list-inline-item font-weight-bold h5"><a href="/Pages/Contact">Contact</a></li>
+                <!--<li class="list-inline-item font-weight-bold h5" data-toggle="modal" data-target="#exampleModal" id="myLogin"><a href="#">Login</a></li>-->
+            </ul>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="txtId">User Id</label>
+                            <input type="email" class="form-control" id="txtId" aria-describedby="emailHelp" placeholder="Enter UserId">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPwd">Password</label>
+                            <input type="password" class="form-control" id="txtPwd" placeholder="Password">
+                        </div>
+                        <a href="/Admin/Index" class="float-left"><p>Forgot Password</p></a>
+                        <a href="/Register/Index" target="_blank" class="float-right">New User(Click here)</a>
+                        <br />
+                        <br />
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr id="start">
+
+    <!-- Contact Us -->
+    <div class="blog-content">
+        <div class="blog-header">
+            <h2 class="text-center font-weight-bold">Contact Us</h2>
+            <hr id="mid">
+        </div>
+        <div class="whtr-contact-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="txtName" class="h5 font-weight-bold">Name</label>
+                            <input type="text" class="form-control" id="txtName">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtEmail" class="h5 font-weight-bold">Email address</label>
+                            <input type="email" class="form-control" id="txtEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtMessage" class="h5 font-weight-bold">Message</label>
+                            <textarea class="form-control" id="txtMessage" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary ml-5" id="mynewBtn">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h1 id="contact-header">Get In Touch</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="page-name">
+            <p class="font-weight-light h4 ml-5 float-left">ASP BlogCorner</p>
+            <ul class="list-inline float-right ml-3">
+                <li class="list-inline-item h5 font-weight-light"><a href="#">Home</a></li>
+                <li class="list-inline-item h5 font-weight-light"><a href="#">Blog</a></li>
+                <li class="list-inline-item h5 font-weight-light"><a href="#">What's Trending !!</a></li>
+                <li class="list-inline-item h5 font-weight-light"><a href="#">Experiences</a></li>
+                <li class="list-inline-item h5 font-weight-light"><a href="#">About The BlogCorner</a></li>
+                <li class="list-inline-item h5 font-weight-light"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+    <!-- External JS -->
+   @*<script src="app.js"></script>*@
+
+    <script src="~/BlogSpot/js/Contact/app.js"></script>
+    
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+</body>
+</html>
